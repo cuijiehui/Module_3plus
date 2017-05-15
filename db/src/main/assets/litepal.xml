@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="appscomm"></dbname>
+    <version value="1"></version>
+
+    <list>
+        <mapping class="cn.appscomm.db.mode.SportDB"></mapping>
+        <mapping class="cn.appscomm.db.mode.SportCacheDB"></mapping>
+        <mapping class="cn.appscomm.db.mode.SleepDB"></mapping>
+        <mapping class="cn.appscomm.db.mode.HeartRateDB"></mapping>
+        <mapping class="cn.appscomm.db.mode.ReminderDB"></mapping>
+    </list>
+</litepal>

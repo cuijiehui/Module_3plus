@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Module_3plus.iml" filepath="$PROJECT_DIR$/Module_3plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bluetooth/bluetooth.iml" filepath="$PROJECT_DIR$/bluetooth/bluetooth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bluetoothscan/bluetoothscan.iml" filepath="$PROJECT_DIR$/bluetoothscan/bluetoothscan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db/db.iml" filepath="$PROJECT_DIR$/db/db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ota/ota.iml" filepath="$PROJECT_DIR$/ota/ota.iml" />
+      <module fileurl="file://$PROJECT_DIR$/presenter/presenter.iml" filepath="$PROJECT_DIR$/presenter/presenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sp/sp.iml" filepath="$PROJECT_DIR$/sp/sp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thirdpartyloginshare/thirdpartyloginshare.iml" filepath="$PROJECT_DIR$/thirdpartyloginshare/thirdpartyloginshare.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,72 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+            dirs 'lib'
+        }
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.1.1'
+
+    // 引用其他子模块
+    compile project(':db')
+//    compile project(':message')
+    compile project(':ota')
+    compile project(':server')
+    compile project(':sp')
+    compile project(':thirdpartyloginshare')
+    compile project(':bluetooth')
+    compile project(':bluetoothscan')
+
+    // RxAndroid2(p模块自己用的)
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    // RxJava2(P模块自己用的)
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    // RxAndroid
+    compile 'io.reactivex:rxandroid:1.2.0'
+
+    // 子模块(bluetooth)用到的第三方eventbus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    // 子模块(db)用到的第三方litepal
+    compile 'org.litepal.android:core:1.5.0'
+    // 子模块(server)用到的第三方RetroFit
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    // 子模块(server)用到的第三方RetroFit使用GSON的适配器
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    // 子模块(server)用到的第三方RetroFit使用RxJava的适配器
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+    // 子模块(第三方登录)用到的第三方facebook twitter google
+    // Google的第三方登录库
+    compile 'com.google.android.gms:play-services-auth:10.0.1'
+    // Facebook的第三方登录库
+    compile(name: 'facebook-android-sdk-4.6.0', ext: 'aar')
+    // Twitter第三方登录库
+    compile('com.twitter.sdk.android:twitter-core:1.3.1@aar') {
+        transitive = true;
+    }
+}
+
